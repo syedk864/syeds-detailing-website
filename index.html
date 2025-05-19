@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed's Detailing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fdd9a0, #a7d3d3);
+      color: #333;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #1e293b;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .hero {
+      background: linear-gradient(135deg, #fdd9a0, #a7d3d3);
+      color: black;
+      text-align: center;
+      padding: 6rem 2rem 2rem 2rem;
+    }
+    .hero img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 2rem;
+      border-radius: 10px;
+    }
+    @media only screen and (max-width: 768px) {
+      .hero img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    .book-button {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: #0f172a;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      margin: 2rem 1rem 0 1rem;
+    }
+    .book-button:hover {
+      background-color: #1e293b;
+    }
+    .section {
+      padding: 2rem;
+      background: white;
+      margin: 2rem auto;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #e2e8f0;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Syed's Detailing</h1>
+    <p>Local Car Detailing | Hanover Park, IL</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Get That Fresh Off-The-Lot Look</h2>
+    <p>Exterior • Interior</p>
+    <img src="/mnt/data/unnamed.jpg" alt="Pricing Graphic" />
+    <br />
+    <a class="book-button" href="https://mail.google.com/mail/?view=cm&fs=1&to=litsydkamal@gmail.com&su=Booking%20Request%20from%20Syed's%20Detailing&body=Hi%20Syed,%0D%0A%0D%0AI%20would%20like%20to%20book%20a%20detailing%20service.%0D%0A%0D%0AMy%20Name%3A%20%0D%0AMy%20Car%20Type%3A%20%0D%0ADate%20Requested%3A%20%0D%0AService%20Type%3A%20%0D%0ALocation%3A%20%0D%0A%0D%0AThanks!" target="_blank">Book Now - Email</a>
+    <a class="book-button" href="sms:+12243221625?&body=Hi%20Syed%2C%20I%20would%20like%20to%20book%20a%20detailing%20service.%0AMy%20Name%3A%20%0AMy%20Car%20Type%3A%20%0ADate%20Requested%3A%20%0AService%20Type%3A%20%0ALocation%3A%20" onclick="if (!/Mobi|Android|iPhone/i.test(navigator.userAgent)) { alert('Please use your phone to send a text message.'); return false; }">Book Now - SMS</a>
+  </div>
+
+  <div id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Exterior Only</h3>
+        <p>Foam wash, tire & wheel cleaning, windows & shine.</p>
+        <p><strong>$50–120 (based on vehicle size)</strong></p>
+      </div>
+      <div class="card">
+        <h3>Interior + Exterior</h3>
+        <p>Includes exterior plus full vacuum, dash wipe-down, and interior detail.</p>
+        <p><strong>$180–300 (based on vehicle size)</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="section">
+    <h2>About Us</h2>
+    <p>Syed's Raw Details is a mobile car detailing service proudly based in Hanover Park, IL. We use high-quality products and techniques to make your ride look brand new, inside and out. We come to you — just book and we’ll handle the shine.</p>
+  </div>
+
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> (224) 322-1625</p>
+    <p><strong>Email:</strong> litsydkamal@gmail.com</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Syed's Raw Details. All rights reserved.</p>
+  </footer>
+</body>
+</html>
